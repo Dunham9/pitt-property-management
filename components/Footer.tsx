@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Logo from "./ui/Logo";
 
 const footerLinks = [
   { label: "About", href: "/about" },
@@ -9,29 +10,24 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-950 px-6 py-12 text-white">
-      <div className="mx-auto flex max-w-7xl flex-col gap-8 md:flex-row md:items-center md:justify-between">
-        <div>
-          <p className="text-xl font-bold tracking-tight">PITT</p>
-          <p className="mt-1 text-xs font-semibold uppercase tracking-[0.25em] text-white/50">
-            Property Management
-          </p>
-        </div>
+    <footer className="bg-[var(--ppm-stone)] px-6 py-12">
+      <div className="mx-auto flex max-w-7xl flex-col gap-8 border-t border-slate-200 pt-10 md:flex-row md:items-center md:justify-between">
+        <Logo />
 
         <div className="flex flex-wrap gap-6">
           {footerLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm text-white/60 transition hover:text-white"
+              className="text-sm text-slate-600 transition hover:text-slate-950"
             >
               {link.label}
             </Link>
           ))}
         </div>
 
-        <p className="text-sm text-white/40">
-          © 2026 Pitt Property Management. All rights reserved.
+        <p className="text-sm text-slate-500">
+          © 2026 Pitt Property Management.
         </p>
       </div>
     </footer>

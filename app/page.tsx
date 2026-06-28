@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Navbar />
 
-      <main className="min-h-screen bg-white text-slate-900">
+   <main className="min-h-screen bg-[var(--ppm-stone)] text-slate-900">
         <Hero />
         <Services />
         <WhyChoose />
