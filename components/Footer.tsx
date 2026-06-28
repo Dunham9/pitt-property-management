@@ -1,34 +1,22 @@
-import Link from "next/link";
-import Logo from "./ui/Logo";
-
-const footerLinks = [
-  { label: "About", href: "/about" },
-  { label: "Services", href: "/services" },
-  { label: "Repairnest", href: "/repairnest" },
-  { label: "Contact", href: "/contact" },
-];
+import Logo from "@/components/ui/Logo";
 
 export default function Footer() {
   return (
-    <footer className="bg-[var(--ppm-stone)] px-6 py-12">
-      <div className="mx-auto flex max-w-7xl flex-col gap-8 border-t border-slate-200 pt-10 md:flex-row md:items-center md:justify-between">
-        <Logo />
+    <footer className="bg-[var(--ppm-stone)] px-6 py-10">
+      <div className="mx-auto max-w-7xl border-t border-slate-200 pt-10">
+        <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+          <div>
+            <Logo />
 
-        <div className="flex flex-wrap gap-6">
-          {footerLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-sm text-slate-600 transition hover:text-slate-950"
-            >
-              {link.label}
-            </Link>
-          ))}
+            <p className="mt-4 text-sm text-slate-600">
+              Boutique property management across West Sussex and the South Coast.
+            </p>
+          </div>
+
+          <p className="text-sm text-slate-500">
+            © 2026 Pitt Property Management
+          </p>
         </div>
-
-        <p className="text-sm text-slate-500">
-          © 2026 Pitt Property Management.
-        </p>
       </div>
     </footer>
   );

@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 import Button from "@/components/ui/Button";
 import Container from "./ui/Container";
@@ -12,38 +12,33 @@ const contactDetails = [
   },
   {
     label: "Phone",
-    value: "Coming soon",
+    value: "Coming Soon",
     icon: Phone,
-  },
-  {
-    label: "Service Area",
-    value: "West Sussex, with a focus on the South Coast",
-    icon: MapPin,
   },
 ];
 
 export default function CTA() {
   return (
-   <Section background="stone" className="pb-16">
+    <Section background="stone" className="pb-16">
       <Container>
         <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[var(--ppm-gold)]">
-              Contact
+              Let's Talk
             </p>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[var(--ppm-navy)] md:text-5xl">
-              Let&apos;s talk about your property.
+              We'd love to hear about your property.
             </h2>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
-              Whether you need full management, rent collection or professional
-              maintenance, we’d be delighted to discuss how PPM can help.
+              Whether you own a single property or a growing portfolio, we'd be
+              delighted to discuss how PPM can help.
             </p>
 
             <div className="mt-10">
               <Button href="mailto:hello@pittpropertymanagement.co.uk">
-                Email PPM
+                Let's Talk
               </Button>
             </div>
           </div>
@@ -55,7 +50,7 @@ export default function CTA() {
               return (
                 <div
                   key={detail.label}
-                  className="rounded-[2rem] bg-white p-8 shadow-sm"
+                  className="rounded-[2rem] bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                 >
                   <Icon
                     size={28}
