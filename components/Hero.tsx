@@ -21,15 +21,17 @@ export default function Hero() {
           Professional property management, built on practical experience.
         </h1>
 
-        <p className="mt-5 max-w-xl text-base leading-7 text-white/85 md:mt-6 md:text-lg">
+        <div className="mt-6 h-px w-24 bg-[var(--ppm-gold)]" />
+
+        <p className="mt-6 max-w-xl text-base leading-7 text-white/85 md:text-lg">
           Boutique management, maintenance and rent collection services for
           landlords who value professionalism, communication and practical
           expertise.
         </p>
 
         <div className="mt-7 md:mt-8">
-          <Button href="/contact" variant="light">
-            Get in Touch
+          <Button href="#contact" variant="light">
+            Let&apos;s Talk
           </Button>
         </div>
       </div>
