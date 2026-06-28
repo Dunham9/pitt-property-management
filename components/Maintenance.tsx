@@ -1,4 +1,4 @@
-import { Hammer, Handshake, MessageCircle, ReceiptText } from "lucide-react";
+import { Hammer, Handshake, MessageCircle, ReceiptText, User } from "lucide-react";
 
 import Container from "./ui/Container";
 import Section from "./ui/Section";
@@ -8,13 +8,13 @@ const values = [
     title: "Boutique Service",
     icon: Handshake,
     description:
-      "A personal, considered approach for landlords who value quality over volume.",
+      "A personal approach for landlords who value quality over volume.",
   },
   {
     title: "Practical Experience",
     icon: Hammer,
     description:
-      "A background in carpentry and property maintenance shapes how we look after every property.",
+      "Hands-on property and management expertise.",
   },
   {
     title: "Transparent Pricing",
@@ -22,10 +22,10 @@ const values = [
     description: "Clear fees, straightforward terms and no unexpected surprises.",
   },
   {
-    title: "Clear Communication",
-    icon: MessageCircle,
+    title: "Single Point of Contact",
+    icon: User,
     description:
-      "Simple updates, honest advice and professional service from start to finish.",
+      "One dedicated contact from your first enquiry onwards.",
   },
 ];
 
@@ -44,15 +44,7 @@ export default function Maintenance() {
             </h2>
 
             <p className="mt-6 text-xl leading-9 text-slate-700">
-              Property management is about more than administration. Before
-              founding PPM, I worked as a carpenter and built practical
-              experience across property maintenance.
-            </p>
-
-            <p className="mt-6 leading-8 text-slate-600">
-              That background shapes how we approach every property — with
-              attention to detail, realistic advice and an understanding of what
-              good workmanship looks like.
+               Property management is about more than administration. Before founding PPM, I worked in the building trade before managing properties for an established local company. That combination of practical experience and professional management allows me to make informed decisions, communicate clearly, and protect my clients' investments.
             </p>
           </div>
 

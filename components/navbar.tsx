@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import Logo from "@/components/ui/Logo";
 
 const navItems = [
-  { label: "Services", href: "#services" },
   { label: "About", href: "#about" },
+  { label: "Services", href: "#services" },
   { label: "Repairnest", href: "#repairnest" },
   { label: "Contact", href: "#contact" },
 ];
@@ -25,9 +25,9 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
- const navStyle = hasScrolled
-  ? "border-white/50 bg-white/70 shadow-lg"
-  : "border-white/20 bg-white/10 shadow-sm";
+  const navStyle = hasScrolled
+    ? "border-white/50 bg-white/70 shadow-lg"
+    : "border-white/20 bg-white/10 shadow-sm";
 
   const textStyle = hasScrolled
     ? "text-slate-700 hover:text-[var(--ppm-navy)]"
@@ -42,31 +42,38 @@ export default function Navbar() {
       <nav
         className={`mx-auto max-w-7xl rounded-3xl border px-6 py-3 backdrop-blur-md transition-all duration-300 ${navStyle}`}
       >
-        <div className="flex items-center justify-between">
-          <Logo light={!hasScrolled} />
-
-          <div className="hidden items-center gap-8 md:flex">
-            {navItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className={`text-sm font-medium transition ${textStyle}`}
-              >
-                {item.label}
-              </a>
-            ))}
+        <div className="flex items-center">
+          <div className="w-56 flex-shrink-0">
+            <Logo light={!hasScrolled} />
           </div>
 
-          <a
-            href="#contact"
-            className={`hidden rounded-full px-5 py-2.5 text-sm font-semibold transition md:inline-flex ${buttonStyle}`}
-          >
-            Let&apos;s Talk
-          </a>
+          <div className="hidden flex-1 justify-center md:flex">
+            <div className="flex items-center gap-8">
+              {navItems.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className={`text-sm font-medium transition ${textStyle}`}
+                >
+                  {item.label}
+                </a>
+              ))}
+            </div>
+          </div>
+
+          <div className="hidden w-56 justify-end md:flex">
+            <a
+              href="#contact"
+              className={`rounded-full px-5 py-2.5 text-sm font-semibold transition ${buttonStyle}`}
+            >
+              Let&apos;s Talk
+            </a>
+          </div>
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className={`text-sm font-semibold transition md:hidden ${
+            aria-label="Toggle navigation"
+            className={`ml-auto text-sm font-semibold transition md:hidden ${
               hasScrolled ? "text-[var(--ppm-navy)]" : "text-white"
             }`}
           >
@@ -86,7 +93,6 @@ export default function Navbar() {
                 {item.label}
               </a>
             ))}
-
           </div>
         )}
       </nav>

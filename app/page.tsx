@@ -14,12 +14,14 @@ export default function Home() {
       <main className="min-h-screen bg-white text-slate-900">
         <Hero />
 
-        <div id="services">
-          <Services />
-        </div>
+
 
         <div id="about">
           <Maintenance />
+        </div>
+
+         <div id="services">
+          <Services />
         </div>
 
         <div id="repairnest">

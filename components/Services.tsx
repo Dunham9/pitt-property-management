@@ -19,10 +19,10 @@ const fullyManagedItems = [
 
 const smallerServices = [
   {
-    title: "Rent Collection",
+    title: "Rent Collect",
     icon: Wallet,
     description:
-      "For landlords who prefer to manage their property while leaving rent collection and payment administration to us.",
+      "For landlords who prefer to manage their property whilst leaving rent collection and payment administration to us.",
     items: [
       "Rent Collection",
       "Rent Statements",
@@ -34,13 +34,13 @@ const smallerServices = [
     title: "Property Maintenance",
     icon: Wrench,
     description:
-      "Maintenance services for landlords, homeowners and businesses using trusted qualified contractors.",
+      "Maintenance services for landlords, homeowners and businesses using trusted qualified contractors. Our services include, but are not limited to:",
     items: [
       "Plumbing",
       "Electrical",
       "Roofing",
       "Decorating",
-      "General Repairs",
+      "Refurbishment",
       "Planned Maintenance",
     ],
   },
@@ -51,9 +51,9 @@ export default function Services() {
     <Section background="stone">
       <Container>
         <SectionHeading
-          eyebrow="Property Services"
-          title="Boutique property services, designed around your investment."
-          description="Professional property management with practical experience at its core."
+          eyebrow="Our Services"
+          title="Independent property management. Personal by design."
+          description="From day-to-day management to long-term maintenance, every service is tailored to your property."
         />
 
         <div className="mt-16 grid gap-8 lg:grid-cols-3">

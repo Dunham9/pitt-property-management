@@ -12,7 +12,7 @@ export default function Repairnest() {
           </p>
 
           <h2 className="mt-4 text-4xl font-semibold tracking-tight text-white md:text-5xl">
-            Technology designed to support better maintenance.
+      Built to simplify property maintenance.
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-white/70">
@@ -23,7 +23,7 @@ export default function Repairnest() {
 
           <div className="mt-10">
             <Button href="/repairnest" variant="outline">
-              Discover Repairnest
+              Coming Soon
             </Button>
           </div>
         </div>
