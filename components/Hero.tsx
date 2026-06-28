@@ -1,3 +1,5 @@
+import Button from "./ui/Button";
+
 export default function Hero() {
   return (
     <section
@@ -8,8 +10,10 @@ export default function Hero() {
         backgroundPosition: "center",
       }}
     >
+      {/* Overlay */}
       <div className="absolute inset-0 bg-black/45" />
 
+      {/* Content */}
       <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-20 pt-36">
         <p className="mb-4 text-xs font-semibold uppercase tracking-[0.35em] text-white/75">
           Boutique Property Management
@@ -26,12 +30,9 @@ export default function Hero() {
         </p>
 
         <div className="mt-8">
-          <a
-            href="/contact"
-            className="inline-flex rounded-full bg-white px-7 py-3 text-sm font-semibold text-slate-950 transition hover:bg-slate-200"
-          >
+          <Button href="/contact" variant="light">
             Get in Touch
-          </a>
+          </Button>
         </div>
       </div>
     </section>

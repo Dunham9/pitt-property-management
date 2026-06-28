@@ -1,7 +1,10 @@
+import Button from "./ui/Button";
+import Section from "./ui/Section";
+
 export default function CTA() {
   return (
-    <section className="bg-[var(--ppm-stone)] px-6 py-28">
-      <div className="mx-auto max-w-4xl text-center">
+    <Section background="stone">
+      <div className="mx-auto max-w-4xl px-6 text-center">
         <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[var(--ppm-gold)]">
           Get in Touch
         </p>
@@ -15,13 +18,10 @@ export default function CTA() {
           maintenance, we’d be delighted to discuss how PPM can help.
         </p>
 
-        <a
-          href="/contact"
-          className="mt-10 inline-flex rounded-full bg-[var(--ppm-navy)] px-8 py-4 text-sm font-semibold text-white transition hover:opacity-90"
-        >
-          Contact PPM
-        </a>
+        <div className="mt-10">
+          <Button href="/contact">Contact PPM</Button>
+        </div>
       </div>
-    </section>
+    </Section>
   );
 }
