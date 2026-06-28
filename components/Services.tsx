@@ -36,7 +36,7 @@ export default function Services() {
         />
 
         <div className="mt-16 grid gap-8 lg:grid-cols-3">
-          <div className="rounded-[2rem] bg-[var(--ppm-navy)] p-8 text-white shadow-xl lg:col-span-2 md:p-12">
+          <div className="rounded-[2rem] bg-[var(--ppm-navy)] p-8 text-white shadow-xl md:p-12 lg:col-span-2">
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[var(--ppm-gold)]">
               Flagship Service
             </p>
@@ -52,10 +52,7 @@ export default function Services() {
 
             <div className="mt-10 grid gap-4 sm:grid-cols-2">
               {fullyManagedItems.map((item) => (
-                <div
-                  key={item}
-                  className="border-t border-white/15 pt-4 text-white/90"
-                >
+                <div key={item} className="border-t border-white/15 pt-4 text-white/90">
                   {item}
                 </div>
               ))}
@@ -64,10 +61,7 @@ export default function Services() {
 
           <div className="grid gap-8">
             {smallerServices.map((service) => (
-              <div
-                key={service.title}
-                className="rounded-[2rem] bg-white p-8 shadow-sm"
-              >
+              <div key={service.title} className="rounded-[2rem] bg-white p-8 shadow-sm">
                 <h3 className="text-2xl font-semibold text-[var(--ppm-navy)]">
                   {service.title}
                 </h3>

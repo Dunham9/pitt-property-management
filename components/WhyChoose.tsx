@@ -4,41 +4,41 @@ import SectionHeading from "./ui/SectionHeading";
 
 const features = [
   {
-    title: "Fully Managed",
+    title: "Boutique Service",
     description:
-      "Complete day-to-day property management, giving landlords confidence that their investment is being looked after properly.",
+      "A personal, considered approach for landlords who value quality over volume.",
   },
   {
-    title: "Rent Collection",
+    title: "Practical Experience",
     description:
-      "Reliable rent collection, clear statements and prompt communication so landlords stay informed.",
+      "A background in carpentry and property maintenance shapes how we look after every property.",
   },
   {
-    title: "Maintenance Expertise",
+    title: "Transparent Pricing",
     description:
-      "Real maintenance experience helps us make practical decisions, manage repairs efficiently and communicate clearly with contractors.",
+      "Clear fees, straightforward terms and no unexpected surprises.",
   },
   {
-    title: "No Hidden Fees",
+    title: "Clear Communication",
     description:
-      "Straightforward pricing, clear terms and no unexpected charges.",
+      "Simple updates, honest advice and a professional service from start to finish.",
   },
 ];
 
 export default function WhyChoose() {
   return (
-    <section className="bg-[var(--ppm-stone)] py-24">
+    <section className="bg-white py-28">
       <Container>
         <SectionHeading
-          eyebrow="Why Choose PPM"
-          title="Professional property management with practical experience."
-          description="Everything we do is built around clear communication, practical knowledge and protecting your investment."
+          eyebrow="Why PPM"
+          title="Professional. Practical. Personal."
+          description="A boutique property management company built around trust, clarity and real property experience."
         />
 
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {features.map((feature) => (
             <Card key={feature.title}>
-              <h3 className="text-xl font-semibold text-slate-950">
+              <h3 className="text-xl font-semibold text-[var(--ppm-navy)]">
                 {feature.title}
               </h3>
 
