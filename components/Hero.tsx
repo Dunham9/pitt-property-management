@@ -26,7 +26,7 @@ export default function Hero() {
         <div className="mt-6 h-px w-24 bg-[var(--ppm-gold)]" />
 
         <p className="mt-6 max-w-xl text-base leading-7 text-white/85 md:text-lg">
-        Independent property management and maintenance across West Sussex and the South Coast.
+        Independent property management and maintenance services across West Sussex and the South Coast.
         </p>
 
         <div className="mt-7 md:mt-8">

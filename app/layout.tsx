@@ -14,9 +14,62 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Pitt Property Management",
+  metadataBase: new URL("https://www.pittpropertymanagement.co.uk"),
+
+  title: {
+    default: "Pitt Property Management | Independent Property Management & Maintenance",
+    template: "%s | Pitt Property Management",
+  },
+
   description:
-    "Boutique property management, rent collection and maintenance services.",
+    "Independent property management and trusted maintenance services across West Sussex and the South Coast. Boutique service, practical experience and transparent pricing.",
+
+  keywords: [
+    "Property Management Worthing",
+    "Property Maintenance Worthing",
+    "Property Management West Sussex",
+    "Property Maintenance West Sussex",
+    "Rent Collection",
+    "Landlord Services",
+    "Property Inspections",
+    "Property Maintenance",
+    "Property Manager",
+    "Worthing",
+    "West Sussex",
+  ],
+
+  authors: [{ name: "Pitt Property Management" }],
+
+  openGraph: {
+    title: "Pitt Property Management",
+    description:
+      "Independent property management and trusted maintenance services across West Sussex and the South Coast.",
+    url: "https://www.pittpropertymanagement.co.uk",
+    siteName: "Pitt Property Management",
+    locale: "en_GB",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Pitt Property Management",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Pitt Property Management",
+    description:
+      "Independent property management and trusted maintenance services.",
+    images: ["/og-image.jpg"],
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
