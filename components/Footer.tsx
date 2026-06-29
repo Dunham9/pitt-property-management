@@ -16,7 +16,7 @@ export default function Footer() {
             />
 
             <p className="max-w-md text-sm leading-7 text-slate-600">
-           Boutique property management for landlords across West Sussex and the South Coast.
+          Independent property management and maintenance across West Sussex and the South Coast.
             </p>
 
             <div className="h-px w-16 bg-[var(--ppm-gold)]" />

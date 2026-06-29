@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import Logo from "@/components/ui/Logo";
 
 const navItems = [
-  { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
+    { label: "Our Approach", href: "#about" },
   { label: "Repairnest", href: "#repairnest" },
   { label: "Contact", href: "#contact" },
 ];

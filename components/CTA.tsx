@@ -32,8 +32,7 @@ export default function CTA() {
             </h2>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
-              Whether you own a single property or a growing portfolio, we'd be
-             happy to discuss how PPM can help.
+              Whether you're looking for property management or reliable maintenance services, we'd love to discuss how PPM can help.
             </p>
 
             <div className="mt-10">

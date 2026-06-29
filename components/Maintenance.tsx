@@ -36,7 +36,7 @@ export default function Maintenance() {
         <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[var(--ppm-gold)]">
-              About PPM
+              Our Approach
             </p>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[var(--ppm-navy)] md:text-5xl">

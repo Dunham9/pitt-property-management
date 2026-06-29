@@ -3,7 +3,7 @@ import Button from "@/components/ui/Button";
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-[82vh] items-end overflow-hidden md:min-h-[88vh]">
+<section className="relative flex min-h-screen items-center overflow-hidden">
       <Image
       src="/images/new-new-hero.png"
         alt="Elegant Georgian front door"
@@ -26,7 +26,7 @@ export default function Hero() {
         <div className="mt-6 h-px w-24 bg-[var(--ppm-gold)]" />
 
         <p className="mt-6 max-w-xl text-base leading-7 text-white/85 md:text-lg">
-          Boutique property management for landlords across West Sussex and the South Coast.
+        Independent property management and maintenance across West Sussex and the South Coast.
         </p>
 
         <div className="mt-7 md:mt-8">
