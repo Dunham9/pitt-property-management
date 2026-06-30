@@ -73,9 +73,10 @@ export default function Navbar() {
 <button
   onClick={() => setIsOpen(!isOpen)}
   aria-label="Toggle navigation"
-  className={`ml-auto text-sm font-semibold transition md:hidden ${
-    hasScrolled ? "text-[var(--ppm-navy)]" : "text-white"
-  }`}
+  style={{
+    color: hasScrolled ? "var(--ppm-navy)" : "#ffffff",
+  }}
+  className="ml-auto text-sm font-semibold transition md:hidden"
 >
   Menu
 </button>
