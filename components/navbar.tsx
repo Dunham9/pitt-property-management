@@ -5,7 +5,7 @@ import Logo from "@/components/ui/Logo";
 
 const navItems = [
   { label: "Services", href: "#services" },
-    { label: "Our Approach", href: "#about" },
+  { label: "Our Approach", href: "#about" },
   { label: "Repairnest", href: "#repairnest" },
   { label: "Contact", href: "#contact" },
 ];
@@ -25,9 +25,12 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navStyle = hasScrolled
-    ? "border-white/50 bg-white/70 shadow-lg"
-    : "border-white/20 bg-white/10 shadow-sm";
+  const desktopNavStyle = hasScrolled
+    ? "md:border-white/50 md:bg-white/70 md:shadow-lg"
+    : "md:border-white/20 md:bg-white/10 md:shadow-sm";
+
+  const mobileNavStyle =
+    "border-white/50 bg-[rgba(247,244,238,0.88)] shadow-lg";
 
   const textStyle = hasScrolled
     ? "text-slate-700 hover:text-[var(--ppm-navy)]"
@@ -40,12 +43,20 @@ export default function Navbar() {
   return (
     <header className="fixed left-0 top-0 z-50 w-full px-4 pt-4">
       <nav
-        className={`mx-auto max-w-7xl rounded-3xl border px-6 py-3 backdrop-blur-md transition-all duration-300 ${navStyle}`}
+        className={`mx-auto max-w-7xl rounded-3xl border px-6 py-3 backdrop-blur-md transition-all duration-300 ${mobileNavStyle} ${desktopNavStyle}`}
       >
-        <div className="flex items-center">
-          <div className="w-56 flex-shrink-0">
-            <Logo light={!hasScrolled} />
-          </div>
+        <div className="flex items-center justify-between">
+         <>
+  {/* Mobile */}
+  <div className="md:hidden">
+    <Logo light={false} />
+  </div>
+
+  {/* Desktop */}
+  <div className="hidden md:block">
+    <Logo light={!hasScrolled} />
+  </div>
+</>
 
           <div className="hidden flex-1 justify-center md:flex">
             <div className="flex items-center gap-8">
@@ -70,16 +81,13 @@ export default function Navbar() {
             </a>
           </div>
 
-<button
-  onClick={() => setIsOpen(!isOpen)}
-  aria-label="Toggle navigation"
-  style={{
-    color: hasScrolled ? "var(--ppm-navy)" : "#ffffff",
-  }}
-  className="ml-auto text-sm font-semibold transition md:hidden"
->
-  Menu
-</button>
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle navigation"
+            className="ml-auto text-sm font-semibold text-[var(--ppm-navy)] transition md:hidden"
+          >
+            Menu
+          </button>
         </div>
 
         {isOpen && (
@@ -88,7 +96,7 @@ export default function Navbar() {
               <a
                 key={item.href}
                 href={item.href}
-               className="text-sm font-medium text-[var(--ppm-navy)]"
+                className="text-sm font-medium text-[var(--ppm-navy)]"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}
