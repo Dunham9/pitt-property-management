@@ -87,7 +87,7 @@ export default function Navbar() {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-sm font-medium text-slate-700"
+               className="text-sm font-medium text-[var(--ppm-navy)]"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}
