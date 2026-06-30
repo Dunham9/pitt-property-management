@@ -70,14 +70,14 @@ export default function Navbar() {
             </a>
           </div>
 
-    <button
+<button
   onClick={() => setIsOpen(!isOpen)}
   aria-label="Toggle navigation"
   className={`ml-auto text-sm font-semibold transition md:hidden ${
-    hasScrolled ? "text-red-500" : "text-green-500"
+    hasScrolled ? "text-[var(--ppm-navy)]" : "text-white"
   }`}
 >
-  {hasScrolled ? "Scrolled" : "Top"}
+  Menu
 </button>
         </div>
 
