@@ -18,7 +18,7 @@ export default function Home() {
           <Services />
         </div>
 
-        <div id="Our Approach">
+        <div id="our-approach">
           <Maintenance />
         </div>
 
