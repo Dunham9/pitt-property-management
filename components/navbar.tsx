@@ -16,7 +16,7 @@ export default function Navbar() {
 
   useEffect(() => {
     function handleScroll() {
-      setHasScrolled(window.scrollY > 140);
+      setHasScrolled(window.scrollY > 80);
     }
 
     handleScroll();
@@ -70,15 +70,15 @@ export default function Navbar() {
             </a>
           </div>
 
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle navigation"
-            className={`ml-auto text-sm font-semibold transition md:hidden ${
-              hasScrolled ? "text-[var(--ppm-navy)]" : "text-white"
-            }`}
-          >
-            Menu
-          </button>
+    <button
+  onClick={() => setIsOpen(!isOpen)}
+  aria-label="Toggle navigation"
+  className={`ml-auto text-sm font-semibold transition md:hidden ${
+    hasScrolled ? "text-red-500" : "text-green-500"
+  }`}
+>
+  {hasScrolled ? "Scrolled" : "Top"}
+</button>
         </div>
 
         {isOpen && (
