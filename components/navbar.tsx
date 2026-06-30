@@ -5,7 +5,7 @@ import Logo from "@/components/ui/Logo";
 
 const navItems = [
   { label: "Services", href: "#services" },
-  { label: "Our Approach", href: "#about" },
+  { label: "Our Approach", href: "#our-approach" },
   { label: "Repairnest", href: "#repairnest" },
   { label: "Contact", href: "#contact" },
 ];
