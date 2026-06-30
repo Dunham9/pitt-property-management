@@ -8,7 +8,7 @@ const values = [
     title: "Boutique Service",
     icon: Handshake,
     description:
-      "A personal approach for landlords who value quality over volume.",
+      "A personal approach for clients who value quality over volume.",
   },
   {
     title: "Practical Experience",
