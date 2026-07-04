@@ -10,7 +10,7 @@ export default function Logo({ light = false }: LogoProps) {
   return (
     <Link href="/" className="inline-flex items-center">
  <Image
-  src="/logo.svg"
+  src="/logo.png"
   alt="PPM Property Management"
   width={180}
   height={72}
