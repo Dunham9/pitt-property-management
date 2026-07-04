@@ -6,17 +6,18 @@ type LogoProps = {
 };
 
 export default function Logo({ light = false }: LogoProps) {
-    
   return (
     <Link href="/" className="inline-flex items-center">
- <Image
-  src="/logo.png"
-  alt="PPM Property Management"
-  width={180}
-  height={72}
-  className={light ? "brightness-0 invert" : ""}
-  priority
-/>
+      <Image
+        src="/logo.png"
+        alt="PPM Property Management"
+        width={180}
+        height={72}
+        className={`block h-12 w-auto object-contain ${
+          light ? "brightness-0 invert" : ""
+        }`}
+        priority
+      />
     </Link>
   );
 }
