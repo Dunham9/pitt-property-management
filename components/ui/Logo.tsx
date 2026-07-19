@@ -1,23 +1,14 @@
 import Image from "next/image";
-import Link from "next/link";
 
-type LogoProps = {
-  light?: boolean;
-};
-
-export default function Logo({ light = false }: LogoProps) {
+export default function Logo() {
   return (
-    <Link href="/" className="inline-flex items-center">
-      <Image
-        src="/logo.png"
-        alt="PPM Property Management"
-        width={180}
-        height={72}
-        className={`block h-12 w-auto object-contain ${
-          light ? "brightness-0 invert" : ""
-        }`}
-        priority
-      />
-    </Link>
+    <Image
+      src="/ppm-logo-horizontal.svg"
+      alt="Pitt Property Management"
+      width={520}
+      height={150}
+      priority
+      className="h-16 w-auto"
+    />
   );
 }

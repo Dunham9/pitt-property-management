@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="border-t border-slate-200 pt-16">
           <div className="flex flex-col items-center text-center">
             <Image
-              src="/logo.png"
+              src="/ppm-logo-horizontal.svg"
               alt="Pitt Property Management"
               width={340}
               height={136}

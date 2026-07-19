@@ -56,7 +56,7 @@ export default function Services() {
         <SectionHeading
           eyebrow="Our Services"
           title="Independent property management. Personal by design."
-          description="From property management to long-term maintenance, every service is tailored to your property."
+          description="From management to maintenance, every service is tailored to your property."
         />
 
         <div className="mt-16 grid gap-8 lg:grid-cols-3">
