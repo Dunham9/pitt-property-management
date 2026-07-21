@@ -10,11 +10,7 @@ const contactDetails = [
     value: "hello@pittpropertymanagement.co.uk",
     icon: Mail,
   },
-  {
-    label: "Phone",
-    value: "Coming Soon",
-    icon: Phone,
-  },
+  
 ];
 
 export default function CTA() {
