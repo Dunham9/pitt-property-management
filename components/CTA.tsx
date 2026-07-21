@@ -1,21 +1,8 @@
-import { Mail, Phone } from "lucide-react";
+import { Mail } from "lucide-react";
 
 import Button from "@/components/ui/Button";
 import Container from "./ui/Container";
 import Section from "./ui/Section";
-
-const contactDetails = [
-  {
-    label: "Email",
-    value: "hello@pittpropertymanagement.co.uk",
-    icon: Mail,
-  },
-  {
-    label: "Phone",
-    value: "Coming Soon",
-    icon: Phone,
-  },
-];
 
 export default function CTA() {
   return (
@@ -32,7 +19,8 @@ export default function CTA() {
             </h2>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
-              Whether you're looking for property management or reliable maintenance services, we'd love to discuss how PPM can help.
+              Whether you're looking for property management or reliable
+              maintenance services, we'd love to discuss how PPM can help.
             </p>
 
             <div className="mt-10">
@@ -42,31 +30,22 @@ export default function CTA() {
             </div>
           </div>
 
-          <div className="grid gap-6">
-            {contactDetails.map((detail) => {
-              const Icon = detail.icon;
+          <div className="flex justify-center lg:justify-start">
+            <div className="w-full max-w-xl rounded-[2rem] bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+              <Mail
+                size={28}
+                strokeWidth={1.75}
+                className="text-[var(--ppm-navy)]"
+              />
 
-              return (
-                <div
-                  key={detail.label}
-                  className="rounded-[2rem] bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                >
-                  <Icon
-                    size={28}
-                    strokeWidth={1.75}
-                    className="text-[var(--ppm-navy)]"
-                  />
+              <p className="mt-6 text-sm font-semibold uppercase tracking-[0.25em] text-[var(--ppm-gold)]">
+                Email
+              </p>
 
-                  <p className="mt-6 text-sm font-semibold uppercase tracking-[0.25em] text-[var(--ppm-gold)]">
-                    {detail.label}
-                  </p>
-
-                  <p className="mt-3 text-lg font-medium text-[var(--ppm-navy)]">
-                    {detail.value}
-                  </p>
-                </div>
-              );
-            })}
+              <p className="mt-3 break-all text-lg font-medium text-[var(--ppm-navy)]">
+                hello@pittpropertymanagement.co.uk
+              </p>
+            </div>
           </div>
         </div>
       </Container>
