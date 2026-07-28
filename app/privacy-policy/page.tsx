@@ -35,7 +35,7 @@ export default function PrivacyPolicyPage() {
       <p>
         Registered in England and Wales
         <br />
-        Registered Office: <strong>71-74 Shelton Street,Covent Garden, London, WC2H 9JQ, United Kingdom</strong>
+        Registered Office: <strong>71-75 Shelton Street,Covent Garden, London, WC2H 9JQ, United Kingdom</strong>
         <br />
         Email:{" "}
         <a href="mailto:hello@pittpropertymanagement.co.uk">
