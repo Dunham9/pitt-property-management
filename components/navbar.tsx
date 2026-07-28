@@ -79,11 +79,7 @@ const buttonStyle =
 
 </div>
 
-{isOpen && (
-  <div className="mt-6 flex flex-col gap-4 border-t border-slate-200 pt-6 md:hidden">
-    ...
-  </div>
-)}
+
 
         {isOpen && (
           <div className="mt-6 flex flex-col gap-4 border-t border-slate-200 pt-6 md:hidden">
