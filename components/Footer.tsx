@@ -15,11 +15,7 @@ export default function Footer() {
           priority
           className="mx-auto"
         />
-
-        {/* Tagline */}
-        <p className="mt-8 text-base tracking-[0.2em] text-[#6B7280]">
-          Property Management • Property Maintenance • Rent Collection
-        </p>
+        
 
         {/* Gold Divider */}
         <div className="mx-auto my-10 h-px w-24 bg-[#C8A86B]" />
