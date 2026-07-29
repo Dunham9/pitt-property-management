@@ -12,7 +12,7 @@ const contactDetails = [
   },
   {
     label: "Phone",
-    value: "Coming Soon",
+    value: "07732 171683",
     icon: Phone,
   },
 ];
