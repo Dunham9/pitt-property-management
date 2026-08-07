@@ -4,6 +4,7 @@ import Button from "@/components/ui/Button";
 export default function Hero() {
   return (
 <section className="relative flex min-h-screen items-center overflow-hidden">
+  {/* New mobile hero image */}
       <Image
       src="/images/Exterior-hero.png"
         alt="Elegant Georgian front door"
@@ -11,7 +12,14 @@ export default function Hero() {
         priority
         className="object-cover object-center"
       />
-
+      {/* Existing desktop hero image */}
+<Image
+  src="/images/new-new-hero.png"
+  alt="Pitt Property Management"
+  fill
+  priority
+  className="object-cover md:hidden"
+/>
       <div className="absolute inset-0 bg-gradient-to-b from-[rgba(13,27,42,0.65)] via-[rgba(13,27,42,0.45)] to-[rgba(13,27,42,0.6)]" />
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-5 pb-14 pt-32 sm:px-6 md:pb-20 md:pt-36">
