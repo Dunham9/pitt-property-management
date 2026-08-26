@@ -6,7 +6,7 @@ export default function Hero() {
 <section className="relative flex min-h-screen items-center overflow-hidden">
   {/* New mobile hero image */}
       <Image
-      src="/images/Exterior-hero.png"
+      src="/images/Exterior-hero2.png"
         alt="Elegant Georgian front door"
         fill
         priority
