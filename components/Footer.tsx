@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="border-t border-gray-200 bg-[#F9F5EE]">
-      <div className="mx-auto max-w-6xl px-6 py-20 text-center">
+     <div className="mx-auto max-w-6xl px-6 pt-12 pb-5 text-center">
 
         {/* Logo */}
         <Image
@@ -59,11 +59,24 @@ export default function Footer() {
           </a>
         </div>
 
-        {/* Copyright */}
-        <p className="mt-12 text-sm text-gray-500">
-          © {new Date().getFullYear()} Pitt Property Management Ltd.
-        </p>
-      </div>
+     {/* Copyright */}
+ <div className="mt-6 border-t border-gray-300 pt-5">
+  <p className="text-sm text-gray-500">
+    © {new Date().getFullYear()} Pitt Property Management Ltd.
+    <span className="mx-2">·</span>
+    Built by{" "}
+    <a
+      href="https://goodfruitcreative.co.uk/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="underline underline-offset-4 transition-colors hover:text-[#C9A96E]"
+    >
+      Good Fruit Creative
+    </a>
+  </p>
+</div>
+
+   </div>
     </footer>
   );
 }
