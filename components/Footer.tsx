@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="border-t border-gray-200 bg-[#F9F5EE]">
-      <div className="mx-auto max-w-6xl px-6 py-8 text-center">
+      <div className="mx-auto max-w-6xl px-6 py-7 text-center">
 
         {/* Logo */}
         <Image
@@ -13,15 +13,15 @@ export default function Footer() {
           width={240}
           height={80}
           priority
-          className="mx-auto h-auto w-[210px]"
+          className="mx-auto h-auto w-[190px] sm:w-[210px]"
         />
 
         {/* Gold Divider */}
-        <div className="mx-auto my-6 h-px w-20 bg-[#C8A86B]" />
+        <div className="mx-auto my-5 h-px w-16 bg-[#C8A86B]" />
 
         {/* Social Links */}
         <div className="mb-5 flex items-center justify-center gap-3">
-          
+
           {/* Facebook */}
           <a
             href="https://www.facebook.com/profile.php?id=61593022056295"
@@ -74,16 +74,25 @@ export default function Footer() {
         </div>
 
         {/* Legal Links */}
-        <div className="flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm text-gray-600">
-          <Link href="/privacy-policy" className="transition hover:text-black">
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-gray-600 sm:gap-x-8 sm:text-sm">
+          <Link
+            href="/privacy-policy"
+            className="transition hover:text-black"
+          >
             Privacy Policy
           </Link>
 
-          <Link href="/cookie-policy" className="transition hover:text-black">
+          <Link
+            href="/cookie-policy"
+            className="transition hover:text-black"
+          >
             Cookie Policy
           </Link>
 
-          <Link href="/terms-of-use" className="transition hover:text-black">
+          <Link
+            href="/terms-of-use"
+            className="transition hover:text-black"
+          >
             Terms of Use
           </Link>
 
@@ -93,46 +102,31 @@ export default function Footer() {
           >
             Complaints Procedure
           </Link>
+            <Link
+            href="/property-redress"
+            className="transition hover:text-black"
+          >
+           Property Redress
+          </Link>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="mt-6 border-t border-gray-300 pt-4">
-          <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
+        
 
-            {/* Property Redress */}
+        {/* Copyright */}
+        <div className="mt-6 border-t border-gray-300 pt-4 text-xs text-gray-500 sm:text-sm">
+          <p>© {new Date().getFullYear()} Pitt Property Management Ltd.</p>
+
+          <p className="mt-1">
+            Built by{" "}
             <a
-              href="https://www.propertyredress.co.uk/"
+              href="https://goodfruitcreative.co.uk/"
               target="_blank"
               rel="noopener noreferrer"
-              className="shrink-0"
+              className="underline underline-offset-4 transition-colors hover:text-[#C9A96E]"
             >
-              <Image
-                src="/the-redress-logo.png"
-                alt="Member of the Property Redress Scheme"
-                width={82}
-                height={32}
-                className="h-auto w-[82px]"
-              />
+              Good Fruit Creative
             </a>
-
-            <span className="hidden text-gray-300 sm:inline">·</span>
-
-            {/* Copyright */}
-            <p className="text-sm text-gray-500">
-              © {new Date().getFullYear()} Pitt Property Management Ltd.
-              <span className="mx-2">·</span>
-              Built by{" "}
-              <a
-                href="https://goodfruitcreative.co.uk/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline underline-offset-4 transition-colors hover:text-[#C9A96E]"
-              >
-                Good Fruit Creative
-              </a>
-            </p>
-
-          </div>
+          </p>
         </div>
 
       </div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Mail, Phone } from "lucide-react";
 
 import Button from "@/components/ui/Button";
@@ -21,7 +22,9 @@ export default function CTA() {
   return (
     <Section background="stone" className="pb-16">
       <Container>
+        {/* Main Contact Area */}
         <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+          {/* Left Column */}
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[var(--ppm-gold)]">
               Let's Talk
@@ -43,6 +46,7 @@ export default function CTA() {
             </div>
           </div>
 
+          {/* Contact Cards */}
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-1">
             {contactDetails.map((detail) => {
               const Icon = detail.icon;
@@ -70,6 +74,8 @@ export default function CTA() {
             })}
           </div>
         </div>
+
+       
       </Container>
     </Section>
   );
