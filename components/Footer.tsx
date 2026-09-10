@@ -22,25 +22,6 @@ export default function Footer() {
         {/* Social Links */}
         <div className="mb-5 flex items-center justify-center gap-3">
 
-          {/* Facebook */}
-          <a
-            href="https://www.facebook.com/profile.php?id=61593022056295"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Facebook"
-            className="flex h-9 w-9 items-center justify-center rounded-full border border-gray-300 text-[#0B1B2B] transition hover:border-[#C8A86B] hover:text-[#C8A86B]"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              width="17"
-              height="17"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <path d="M13.5 8.5V6.8c0-.8.5-1 1-1h2.4V2.1L13.6 2C10.3 2 9 4 9 6.5v2H6v4h3V22h4.5v-9.5h3l.5-4h-3.5z" />
-            </svg>
-          </a>
-
           {/* Instagram */}
           <a
             href="https://www.instagram.com/pittpropertymanagementuk/"
